@@ -62,7 +62,7 @@ public class Constants {
     public static final String SUMMARY_DATE_NAME = "summary_date";
     /**APK下载位置*/
     public static final String APK_PATH = Environment.getExternalStorageDirectory() + "/Notes/notesLove.apk";
-    public static final String TOKEN = "dd30d7a4-c4f1-4644-8239-4450ea82bc22-2015-01-05";
+    public static final String TOKEN = "dd30";
     /**服务器连接地址 */
     public static final String HOST_URL = "http://notes.xbizi.com:8080/notesService/services/rest/webService";
     /**版本检测接口*/
