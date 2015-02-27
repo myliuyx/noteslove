@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backup_item_bg">
+
+    <LinearLayout
+        android:id="@+id/bill_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/backup_item_padding_left">
+
+        <TextView
+            android:id="@+id/backup_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账单_2015-01-18.db"
+            android:textSize="16dip"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dip"/>
+
+        <TextView
+            android:id="@+id/backup_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-01-18 18:30"
+            android:layout_marginTop="4dip"
+            android:textSize="12dip"
+            android:textColor="#dedede"
+            android:layout_marginBottom="5dip"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/backup_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="49KB"
+        android:textSize="18dip"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/backup_item_padding_left"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

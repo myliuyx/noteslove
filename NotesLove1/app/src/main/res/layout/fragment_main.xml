@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xf.notes.MainActivity$HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/remember"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_today_heigh">
+
+        <RelativeLayout
+            android:id="@+id/today_number_info"
+            android:layout_width="@dimen/today_number_rl_width"
+            android:layout_height="@dimen/today_number_rl_heigh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/add_detail_et_press">
+
+            <TextView
+                android:id="@+id/tv_today_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/account_number"
+                android:textColor="@color/main_background"
+                android:textSize="@dimen/add_account_number_size" />
+
+            <Button
+                android:id="@+id/today_detail_bt"
+                android:layout_width="@dimen/today_detaile_bt_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/add_detail_button_bg"
+                android:text="@string/today_consumption"
+                android:textColor="@color/white"
+                android:textSize="@dimen/add_account_number_size" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add_account_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/add_sumption_bg" />
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/record_yesterday"
+        layout="@layout/home_row_item" />
+
+    <include
+        android:id="@+id/record_this_month"
+        layout="@layout/home_row_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/more_bt_marg_top">
+        <ImageButton
+            android:id="@+id/boutique_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boutique_bg"
+            android:layout_marginLeft="@dimen/home_ad_padding"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+        <Button
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_check_more_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/add_account_text_size"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:id="@+id/tuijian_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_tuijian_bg"
+            android:layout_marginRight="@dimen/home_ad_padding"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

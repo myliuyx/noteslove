@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xf.notes.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="@color/main_background">
+
+        <ImageButton
+            android:id="@+id/imgbut_home_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_arrow_bg"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/main_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_name_textSize"
+            android:visibility="visible" />
+        <ImageButton
+            android:id="@+id/main_setting_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_setting_title_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+</RelativeLayout>

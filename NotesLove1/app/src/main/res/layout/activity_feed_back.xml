@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xf.notes.activity.FeedBackActivity"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/desc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="我们的进步离不开您的反馈!"
+        android:textColor="@android:color/black"
+        android:paddingLeft="24dip" />
+
+    <EditText
+        android:id="@+id/contact_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_title_heigh"
+        android:background="@drawable/rounded_corners_bg"
+        android:layout_below="@+id/desc_title"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="@dimen/feedback_margin"
+        android:layout_marginRight="@dimen/feedback_margin"
+        android:textSize="14dip"
+        android:hint="联系方式(Email、QQ)" />
+
+    <EditText
+        android:id="@+id/desc_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contact_et"
+        android:lines="8"
+        android:paddingLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="@dimen/feedback_margin"
+        android:layout_marginRight="@dimen/feedback_margin"
+        android:background="@drawable/rounded_corners_bg"
+        android:gravity="top"
+        android:textSize="14dip"
+        android:paddingTop="5dip"
+        android:hint="反馈内容~\n您也可以加入我们的QQ群进行交流:376955327" />
+
+    <Button
+        android:id="@+id/submit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_ed"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="@dimen/feedback_margin"
+        android:layout_marginRight="@dimen/feedback_margin"
+        android:background="@drawable/main_home_button_bg"
+        android:textColor="@android:color/white"
+        android:textSize="20dip"
+        android:text="提交反馈" />
+
+    <LinearLayout
+        android:id="@+id/weibo_tv_layou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_tv_contact"
+        android:orientation="vertical"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/submit_feedback">
+        <TextView
+            android:id="@+id/weibo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_contact"
+            android:layout_marginLeft="@dimen/feedback_margin"
+            android:layout_marginRight="@dimen/feedback_margin"
+            android:background="@drawable/rounded_corners_top_bg"
+            android:layout_below="@+id/submit_feedback"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="微博@E-Json" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weixin_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_contact"
+        android:layout_marginLeft="@dimen/feedback_margin"
+        android:layout_marginRight="@dimen/feedback_margin"
+        android:background="@drawable/rounded_corners_bottom_bg"
+        android:layout_below="@+id/weibo_tv_layou"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="微信公众号:jonymobile"
+        android:visibility="visible" />
+</RelativeLayout>

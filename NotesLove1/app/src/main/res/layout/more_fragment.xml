@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/more_main_bg"
+    android:orientation="vertical"
+    tools:context="com.xf.notes.MainActivity$MoreFragment" >
+
+    <LinearLayout
+        android:id="@+id/title_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_item_bill_type_heigh"
+        android:layout_marginLeft="@dimen/bill_title_margin"
+        android:layout_marginRight="@dimen/bill_title_margin"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/more_type_bg" >
+
+        <TextView
+            android:id="@+id/bill_type_all_tv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/more_type_all_bg_press"
+            android:gravity="center"
+            android:text="@string/more_type_all"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/bill_type_classification_rl"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/more_type_classification_bg_normal" >
+
+            <TextView
+                android:id="@+id/bill_type_classification_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/more_type_classification"
+                android:textColor="@color/classification" />
+
+            <ImageView
+                android:id="@+id/bill_type_classification_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/classification_normal"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/detaile_bill_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_type_layout"
+        android:layout_marginTop="6dip"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/gary_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/title_type_layout"
+         android:layout_marginTop="6dip"
+        android:background="@color/gray"
+        android:contentDescription="@null" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

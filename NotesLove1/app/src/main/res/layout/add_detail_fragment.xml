@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/hear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detail_notes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_detaile_gridview_heigh"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:horizontalSpacing="12dip"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/round_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/round_layout_heigh"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hear_layout"
+        android:background="#f0f2f5">
+
+        <EditText
+            android:id="@+id/ed_consump_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_detaile_heigth"
+            android:background="@drawable/add_detail_et_bg"
+            android:hint="@string/add_fragment_detail"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:paddingLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:inputType="text"
+            android:textSize="@dimen/edit_text_size" />
+
+        <EditText
+            android:id="@+id/ed_consump_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_number_heigth"
+            android:background="@drawable/add_detail_et_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_below="@+id/ed_consump_detail"
+            android:layout_marginTop="4dip"
+            android:paddingLeft="6dip"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/add_detaile_determine"
+            android:layout_width="@dimen/add_detaile_button_width"
+            android:layout_height="@dimen/bt_number_heigth"
+            android:layout_marginBottom="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/add_detail_button_bg"
+            android:text="@string/determine"
+            android:textColor="@color/white"
+            android:textSize="@dimen/add_account_number_size"
+            android:layout_alignBottom="@+id/ed_consump_number"
+            android:layout_alignRight="@+id/ed_consump_number" />
+    </RelativeLayout>
+
+</RelativeLayout>

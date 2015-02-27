@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xfnotesss">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/xfnotesss.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

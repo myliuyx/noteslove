@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">记账爱</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_name">记账</string>
+    <string name="add_account">记一笔</string>
+    <string name="account_number">今日支出:0元</string>
+    <string name="cost_number">0￥</string>
+    <string name="view_detailed">查看详细</string>
+    <string name="view_more">查看更早的</string>
+    <string name="add_fragment_detail">添加备注</string>
+    <string name="determine">确定</string>
+    <string name="today_consumption">明细</string>
+    <string name="more_type_all">全部</string>
+    <string name="more_type_classification">分类</string>
+    <string name="remove_text">删除</string>
+    <string name="cancel">取消</string>
+    <string name="remove_bill">删除账单</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+
+</resources>

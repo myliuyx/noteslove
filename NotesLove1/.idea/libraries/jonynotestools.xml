@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jonynotestools">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/jonynotestools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

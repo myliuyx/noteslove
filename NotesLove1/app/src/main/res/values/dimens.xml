@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_heigh">64dip</dimen>
+    <dimen name="title_name_textSize">26dip</dimen>
+    <dimen name="app_bt_heigh">38dip</dimen>
+    <dimen name="app_bt_weith">54dip</dimen>
+    <dimen name="app_text_size">14dip</dimen>
+    <dimen name="app_icon_size">44dip</dimen>
+    <!-- HomeFragment -->
+    <dimen name="home_add_heigh">94dip</dimen>
+    <dimen name="home_today_heigh">104dip</dimen>
+    <dimen name="home_row_heigh">114dip</dimen>
+    <dimen name="remember_button_width">164dip</dimen>
+    <dimen name="add_account_text_size">22dip</dimen>
+    <dimen name="add_account_number_size">18dip</dimen>
+    <dimen name="home_module_spacing">30dip</dimen>
+    <dimen name="today_number_rl_width">244dip</dimen>
+    <dimen name="today_number_rl_heigh">38dip</dimen>
+    <dimen name="today_detaile_bt_width">70dip</dimen>
+    <dimen name="home_ad_padding">5dip</dimen>
+
+    <!-- 查看详细 -->
+    <dimen name="detail_bt_heigh">28dip</dimen>
+    <dimen name="detail_bt_width">84dip</dimen>
+    <dimen name="detail_bt_text_size">12dip</dimen>
+    <dimen name="popLayout_heigth">180dip</dimen>
+    <dimen name="version_popLayout_heigth">240dip</dimen>
+    <!-- 查看更早的 -->
+    <dimen name="view_more_bt_width">218dip</dimen>
+    <dimen name="view_more_bt_heigh">50dip</dimen>
+    <dimen name="more_bt_marg_top">26dip</dimen>
+    <!--Home GridView Itme  -->
+    <dimen name="gridview_item_ly_size">12dip</dimen>
+    <dimen name="gridview_item_textsize">10dip</dimen>
+    <dimen name="gridview_item_size">12dip</dimen>
+    <!-- add fragment -->
+    <dimen name="edit_text_size">12dip</dimen>
+    <dimen name="edit_number_heigth">44dip</dimen>
+    <dimen name="bt_number_heigth">42dip</dimen>
+    <dimen name="edit_detaile_heigth">36dip</dimen>
+    <dimen name="add_detaile_gridview_heigh">132dip</dimen>
+    <dimen name="add_detaile_button_width">76dip</dimen>
+    <dimen name="round_layout_heigh">40dip</dimen>
+    <!-- More Activity -->
+    <dimen name="title_image_distance">20dip</dimen>
+    <dimen name="more_list_item_text_size">14dip</dimen>
+    <dimen name="more_list_item_date_marginLeft">8dip</dimen>
+    <dimen name="more_item_bill_number_tv">18dip</dimen>
+    <dimen name="more_item_bill_type_heigh">32dip</dimen>
+    <dimen name="more_item_bill_list_item_heigh">64dip</dimen>
+    <dimen name="more_item_bill_list_item_bt_width">56dip</dimen>
+    <!-- Dialog  -->
+    <dimen name="base_button_heigh">54dip</dimen>
+    <dimen name="version_button_heigh">48dip</dimen>
+    <dimen name="add_type_dialog_title_heigh">70dip</dimen>
+    <!-- mothFragment -->
+    <dimen name="moth_fragment_list_item_heigh">76dip</dimen>
+    <!--Feedback -->
+    <dimen name="ed_title_heigh">48dip</dimen>
+    <dimen name="tv_contact">44dip</dimen>
+    <dimen name="layout_tv_contact">42dip</dimen>
+    <dimen name="feedback_margin">20dip</dimen>
+    <!--PopupWindw -->
+    <dimen name="setting_layout_heigth">200dip</dimen>
+    <dimen name="setting_popup_item_heigth">49dip</dimen>
+    <dimen name="setting_icon_padding">16dip</dimen>
+    <dimen name="setting_text_size">16dip</dimen>
+    <dimen name="setting_text_paddingleft">5dip</dimen>
+    <!--BackUp-->
+    <dimen name="bt_backup_heigth">48dip</dimen>
+    <dimen name="backup_item_padding_left">30dip</dimen>
+    <dimen name="padding_dialog_line">20dip</dimen>
+</resources>

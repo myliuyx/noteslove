@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/install_linearlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/item_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/icon_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="clip_vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/app_icon"
+                            android:layout_width="@dimen/app_icon_size"
+                            android:layout_height="@dimen/app_icon_size"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="10dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon_layout"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/app_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/app_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dip"
+                            android:layout_marginTop="5dip"
+                            android:textColor="#898989"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs__list_divider_holo_light"
+                    android:layout_below="@+id/item_relative"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:id="@+id/horiontaSorollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dip"
+                    android:layout_below="@+id/item_relative"
+                    android:background="@drawable/button_shadow_normal"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/horiontaSorollview"
+                    android:background="#EBEBEB">
+
+                    <TextView
+                        android:id="@+id/app_summarize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginTop="5dip"
+                        android:text="应用简介:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/app_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/linearLayout1" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/install_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="#20000000">
+
+            <Button
+                android:id="@+id/install_but"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/main_home_button_bg"
+                android:text="一键安装"
+                android:textColor="#e1e0dc" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

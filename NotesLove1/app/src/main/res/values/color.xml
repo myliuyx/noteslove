@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common color -->
+    <color name="main_background">#4bc1d2</color>
+    <color name="babyBlue">#6bc9d8</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#50000000</color>
+    <color name="gray_f">#15000000</color>
+    <color name="gray_version_bg">#40000000</color>
+    <color name="gray_text">#525051</color>
+    <color name="home_bg_color">#F0F2F5</color>
+    <color name="home_text_color">#A4A9AE</color>
+    <color name="home_day_text_color">#949FAB</color>
+    <color name="add_type_text_color">#333333</color>
+    <color name="setting_item_defult">#39a8ba</color>
+    <color name="setting_item_press">#329cad</color>
+    <color name="settingi_item_line">#2695a7</color>
+    <!-- Home GridView Item color  -->
+    <color name="food">#f96500</color>
+    <color name="have_meal">#ff9000</color>
+    <color name="clothing">#d2447e</color>
+    <color name="traffic">#00deff</color>
+    <color name="miscellaneous">#ccb7a2</color>
+    <color name="fruits_vegetables">#a1d858</color>
+    <color name="necessites">#a552a8</color>
+    <color name="custom_type">#f85102</color>
+    <!--More Activity  -->
+    <color name="more_itme_title_money">#fc4702</color>
+    <color name="more_main_bg">#eef1ef</color>
+    <color name="classification">#929292</color>
+    <color name="more_popup_grid_bg">#eaeaea</color>
+    <!--BackUp-->
+    <color name="backup_title_color">#f0f2f5</color>
+    <color name="backup_item_color">#e9e9ea</color>
+    <color name="backup_dialog_press">#54d7ea</color>
+    <color name="backup_cancel_line">#dedede</color>
+</resources>

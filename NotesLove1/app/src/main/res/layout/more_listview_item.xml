@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_list_item_heigh"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/more_list_item_date_ly_width"
+            android:layout_height="match_parent"
+            android:background="@color/main_background"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="@dimen/bill_title_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/consumption_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/more_list_item_date_marginLeft"
+                android:textColor="@color/white"
+                android:textSize="@dimen/more_list_item_text_size" />
+
+            <TextView
+                android:id="@+id/consumption_moth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/more_list_item_date_marginLeft"
+                android:textColor="@color/white"
+                android:textSize="@dimen/more_list_item_text_size" />
+
+            <TextView
+                android:id="@+id/consumption_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/more_list_item_date_marginLeft"
+                android:textColor="@color/white"
+                android:textSize="@dimen/more_list_item_text_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/date_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/title_year"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" 
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/titile_money"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="4"
+                    android:layout_marginRight="5dip"
+                    android:textColor="@color/more_itme_title_money" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/grd_more_detaile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_count"
+                android:layout_marginTop="4dip"
+                android:layout_marginBottom="6dip"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:verticalSpacing="10dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

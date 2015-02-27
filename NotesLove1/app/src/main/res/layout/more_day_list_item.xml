@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_item_bill_list_item_heigh"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/consumption_type_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_press"
+            android:layout_marginLeft="14dip"
+            android:contentDescription="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dip" >
+
+            <TextView
+                android:id="@+id/consumption_type_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/consumption_type_numb_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="6dip"
+                android:textSize="@dimen/more_item_bill_number_tv"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#e2e2e2"
+                android:contentDescription="@null" />
+
+            <Button
+                android:id="@+id/bill_remove_bt"
+                android:layout_width="@dimen/more_item_bill_list_item_bt_width"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/imageView1"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/add_detail_button_bg"
+                android:text="@string/remove_text"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

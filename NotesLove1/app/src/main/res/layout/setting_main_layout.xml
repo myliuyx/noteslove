@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/setting_layout_heigth">
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="#00000000"/>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/feddback_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_popup_item_heigth"
+            android:background="@drawable/setting_item_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/setting_icon_padding"
+                android:background="@drawable/feedback_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="意见反馈"
+                android:textColor="@android:color/white"
+                android:paddingLeft="@dimen/setting_text_paddingleft"
+                android:gravity="center"
+                android:textSize="@dimen/setting_text_size"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/settingi_item_line"/>
+        <RelativeLayout
+            android:id="@+id/check_version_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_popup_item_heigth"
+            android:background="@drawable/setting_item_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/setting_icon_padding"
+                android:background="@drawable/check_version_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="检查更新"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="@dimen/setting_text_size"
+                android:paddingLeft="@dimen/setting_text_paddingleft"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/settingi_item_line"/>
+        <RelativeLayout
+            android:id="@+id/backup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_popup_item_heigth"
+            android:background="@drawable/setting_item_bg"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/setting_icon_padding"
+                android:background="@drawable/backup_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="本地备份"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="@dimen/setting_text_size"
+                android:paddingLeft="@dimen/setting_text_paddingleft"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/settingi_item_line"/>
+        <RelativeLayout
+            android:id="@+id/about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_popup_item_heigth"
+            android:background="@drawable/setting_item_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/setting_icon_padding"
+                android:background="@drawable/about_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="关于我们"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="@dimen/setting_text_size"
+                android:paddingLeft="@dimen/setting_text_paddingleft"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_row_heigh"
+    android:layout_marginTop="@dimen/home_module_spacing"
+    android:background="@color/main_background" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/add_account_number_size" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/cost_number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/add_account_number_size"
+        android:textStyle="italic" />
+
+    <GridView
+        android:id="@+id/detail_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money"
+        android:layout_marginTop="@dimen/home_item_grid_padding_top"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="4dip"
+        android:numColumns="4"
+        android:verticalSpacing="10dip" 
+        android:listSelector="#00000000"
+        />
+
+</RelativeLayout>

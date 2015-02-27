@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.xf.notes"
+        minSdkVersion 8
+        targetSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android-optimize.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:appcompat-v7:18.0.0'
+    compile files('libs/xfnotesss.jar')
+    compile files('libs/umeng-analytics-v5.4.1.jar')
+    compile files('libs/jonynotestools.jar')
+}

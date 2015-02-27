@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_version_bg">
+
+    <RelativeLayout
+        android:id="@+id/popupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/version_popLayout_heigth"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/version_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:paddingLeft="10dip"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="发现新版" />
+
+        <TextView
+            android:id="@+id/version_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version_title"
+            android:layout_marginTop="8dip"
+            android:paddingLeft="10dip"
+            android:lineSpacingExtra="6dip"
+            android:textColor="@android:color/black"
+            android:text="发现新版\n1.优化提示。\n2.新增通知\n3.美化UI" />
+
+        <ImageView
+            android:id="@+id/line_image"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/main_background"
+            android:layout_above="@+id/botom_layout"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/version_button_heigh"
+            android:background="@color/main_background"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/botom_layout">
+
+            <Button
+                android:id="@+id/version_cancel_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:background="@drawable/version_item_bg"
+                android:text="不,再等等" />
+
+            <Button
+                android:id="@+id/version_ok_bt"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:background="@drawable/version_item_bg"
+                android:text="立即更新" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

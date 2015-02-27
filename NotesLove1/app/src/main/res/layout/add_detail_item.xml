@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_imte_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables" >
+
+    <ImageView
+        android:id="@+id/type_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/have_meal_press"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip" 
+        android:textSize="@dimen/gridview_item_size"
+        android:textColor="@color/add_type_text_color"/>
+
+</LinearLayout>

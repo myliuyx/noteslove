@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/moth_fragment_list_item_heigh"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_conmption_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bill_title_margin"
+            android:layout_marginTop="6dip" >
+
+            <ImageView
+                android:id="@+id/iv_conmption_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/food_press"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_conmption_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/iv_conmption_type"
+                android:textSize="14dip"
+                android:text="吃饭"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_conmption_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/bill_title_margin"
+                android:text="22.0元"
+                android:textColor="#666666" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_conmption_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dip"
+            android:layout_below="@+id/rl_conmption_info"
+            android:layout_marginTop="8dip"
+            android:text="22号 星期天"
+            android:textColor="#666666" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#e2e2e2"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</LinearLayout>
